@@ -435,3 +435,19 @@ footer + div {
   bottom: 6px;
   z-index: 2;
 }
+@media screen and (min-width: 700px) {
+  footer + div > div:first-of-type {
+    position: fixed;
+    bottom: initial;
+    top: 15px;
+  }
+}
+
+.fa-plus-square,
+.fa-calendar-alt {
+  color: #224bc3;
+}
+
+.fa-caret-square-up {
+  color: #b32929;
+}
