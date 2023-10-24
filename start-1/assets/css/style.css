@@ -27,6 +27,9 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 @media screen and (min-width: 800px) {
@@ -131,6 +134,25 @@ ol,
 dl,
 blockquote {
   margin-bottom: 1.2em;
+}
+h1 span {
+  position: relative;
+}
+
+h1 span span {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  word-break: keep-all;
+}
+
+h1 img {
+  height: auto;
+  position: absolute;
+  width: 9em;
+  top: 4rem;
+  left: 0;
+  opacity: 0.8;
 }
 
 h1 + p {
@@ -311,6 +333,14 @@ aside div {
   border: 1px solid #c3c3c3;
   margin-bottom: 1em;
   padding: 1em;
+  position: relative;
+}
+.fa-tag {
+  font-size: 4.4rem;
+  color: #0000002b;
+  position: absolute;
+  top: 11px;
+  right: 11px;
 }
 
 @media screen and (min-width: 1200px) {
